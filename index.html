@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>Landing Page</title>
+        
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <style type="text/css">
+            body{
+                margin: 0;
+                padding: auto;
+                font-family: sans-serif;
+                background-image: url("https://images.wallpaperscraft.com/image/code_coding_binary_code_abstract_patterns_112140_1920x1080.jpg");
+                opacity: 1;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                color: rgb(255, 255, 255);                               
+            }
+            @media screen and (min-width: 480px) {
+                body {
+                    background-color: lightgreen;
+                }
+            }
+            #head{
+                background-color: 2C2C32;
+                width: 1380px;
+                height: 200px;                
+                top: 0;
+                margin-bottom: 25px;
+            }
+            #header{
+                position: fixed;
+                top: 5px;
+            }
+            #header-img{
+                max-width: 45px;
+                width: 45px;
+                margin: 15px 20px 25px 200px;
+                position: relative;
+                float: left;
+                border-radius: 3px;
+                
+            }
+            #header-title-left{
+                margin: 15px 250px 25px 25px;
+                position: relative;
+                float: left;
+                color: cornsilk;
+            }
+            #nav{
+                position: relative;
+                float: right;
+                width: 350px;   
+                display: flex;                           
+            }
+            .nav-link{
+                position: relative;
+                color: white;
+                top:15px;
+                right: 100px;
+                float: right;
+                font-size: 25px;
+                font-family:Arial, Helvetica, sans-serif;
+                margin: 0px 35px;
+            }
+            ul{
+                
+                list-style-type: none;
+            }
+            a{
+                color: black;                
+            }
+            a:hover{
+                color: red;
+            }
+            #form-input{
+                width: 500px;
+                height: 300px;
+                position: relative;
+                left: 450px;
+                top: 200px;
+                text-align: center;
+                font-size: 25px;                
+            }
+            #email-label{
+                color:rgb(255, 255, 255);
+                font-size: larger;
+            }
+            #email{
+                height:30px;
+                width:250px;
+                font-size: large;
+                color: black;
+            }
+            #submit{
+                height:30px;
+                width:80px;
+                font-size: large;
+            }
+            .divs{
+                max-width: 800px;
+                width: 800px;
+                margin-left: 250px;
+                margin-right: 250px;
+                
+            }
+            iframe{
+                margin-left: 200px;
+                margin-right: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            <header id="header">
+                <img src="https://user-images.githubusercontent.com/674621/71187801-14e60a80-2280-11ea-94c9-e56576f76baf.png" id="header-img" alt="header-img">
+                <h1 id="header-title-left">Visual Studio Code</h3>
+                <nav id="nav-bar">
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="#evolution">Evolution</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#updates">Updates</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                    </ul>                    
+                </nav>
+            </header>
+        </div>
+        <div id="form-input">
+            <form id="form" action="https://www.freecodecamp.com/email-submit).">                
+                <label id="email-label" for="email">Lets get started, Enter your email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <input type="submit" id="submit" value="submit" class="btn">
+            </form>
+        </div>
+        <div id="evolution" class="divs">
+            <h1>Evolution</h1>
+            <p>
+                Today over five thousand developers use the Visual Studio Code Insiders Build for early access to new features and to validate bug fixes.
+                We love the Insiders build because we get valuable feedback and usage insights prior to each Stable release.
+                Thank you for your help!
+            </p>
+            <br>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/VqCgcpAypFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <p>
+                Initially, we released an Insiders build once per month, a few days before the Stable release.
+                Over time, we increased the frequency of Insiders builds and today we ship new Insiders builds roughly once a week.
+            </p>         
+        </div>
+        <hr>
+        <div id="updates" class="divs">
+            <h1>Updates</h1>
+            <p>
+                Welcome to the May 2021 release of Visual Studio Code.
+                There are a number of updates in this version that we hope you will like, some of the key highlights include:
+            </p>
+            <p>
+                <ol>
+                    <li>Workspace Trust - Extra security against code execution when browsing unfamiliar source code.</li>
+                    <li>New Getting Started experience - Helps you quickly set up and learn about VS Code.</li>
+                    <li>Remote Repositories - Browse and edit code without locally cloning repositories.</li>
+                    <li>Terminal tabs - Tabs let you easily create, manage, and group multiple open terminals.</li>
+                    <li>Edge browser debugging - Integrates the Microsoft Edge Developer Tools directly into VS Code.</li>
+                </ol>
+            </p>
+        </div>
+        <hr>
+        <div id="blog" class="divs">
+            <h1>Blog</h1>
+            <p>
+                We're excited to present the new Remote Repositories extension for Visual Studio Code!
+                This is a new experience that we've been building in partnership with our friends at GitHub to enable working with source code repositories quickly and safely inside VS Code.
+            </p>
+            <br>
+            <h3>A quicker way to open source code repositories</h3>
+            <br>
+            <p>In VS Code, we've offered integrated support for Git from the very beginning, and we've been supporting many other source control management (SCM) providers through extensions.
+                This has allowed developers to clone and work with repositories directly within VS Code.
+            </p>
+            <br>
+            <p>
+                However, a large part of what developers do every day involves reading other people's code: reviewing pull requests, browsing open-source repositories, experimenting with new technologies or projects, inspecting upstream dependencies to debug applications, etc. What all of these have in common is that as a first step, you usually clone the repository locally and then open the code in your favorite code editor (which we hope is VS Code!). Yet, cloning a repository takes time, may lead you to review an outdated version of the repo if you forget to pull, and can sometimes be a security risk if you're unfamiliar with the code.
+            </p>
+        </div>
+    </body>
+</html>
